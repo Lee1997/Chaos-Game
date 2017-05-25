@@ -20,4 +20,57 @@ body{
   min-height: 500px;
   background-color: white;
   margin: 20px;
+  border: 3px solid #717b82;
+  margin-bottom: 10px;
+}
+
+#pixels{
+  color: white;
+  margin: 5px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#test{
+  color: white;
+}
+
+#triangleDescription{
+  color: white;
+  border: 3px solid white;
+  width: 980px;
+  height: 150px;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.btn {
+  background: #717b82;
+  background-image: -webkit-linear-gradient(top, #717b82, #232526);
+  background-image: -moz-linear-gradient(top, #717b82, #232526);
+  background-image: -ms-linear-gradient(top, #717b82, #232526);
+  background-image: -o-linear-gradient(top, #717b82, #232526);
+  background-image: linear-gradient(to bottom, #717b82, #232526);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background: #232526;
+  background-image: -webkit-linear-gradient(top, #232526, #717b82);
+  background-image: -moz-linear-gradient(top, #232526, #717b82);
+  background-image: -ms-linear-gradient(top, #232526, #717b82);
+  background-image: -o-linear-gradient(top, #232526, #717b82);
+  background-image: linear-gradient(to bottom, #232526, #717b82);
+  text-decoration: none;
 }

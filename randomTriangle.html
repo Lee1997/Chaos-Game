@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Random</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="triangleRandom.js"></script>-
+</head>
+<body>
+<div id="container">
+  <h1 id="test">Triangle Random Generator</h1>
+  <canvas id="triangleCanvas"></canvas>
+  <p id="pixels">Pixels: 0</p>
+  <div id="buttonsContainer">
+    <button id="startButton" class="btn" onclick="startTriangle()">Start</button>
+    <button id="addOneButton" class="btn" onclick="addSingle()">Add Pixel</button>
+    <button id="draw1000Button" class="btn" onclick="draw1000()">Draw 1000 Pixels</button>
+    <button id="runButton" class="btn" onclick="runTriangle()">Run</button>
+  </div>
+  <div id="triangleDescription">
+    The idea with this game is that each vertex of the triangle is labelled 1, 2, 3.
+    A random point in the triangle is picked and drawn.<br /> <br />
+    A number between 1 and 3 is randomed and a pixel is drawn halfway between the randomed vertex and the previous point. <br /> <br />
+    As you put more and more random points, it starts to map out an interesting design.
+  </div>
+</div>
+</body>
+</html>

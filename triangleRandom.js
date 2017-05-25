@@ -1,6 +1,7 @@
 var firstPixel = true;
 
 function startTriangle(){
+  pixels = 0;
   firstPixel = true;
   ctx.clearRect(0, 0, width, height);
 
@@ -88,10 +89,11 @@ function sleep(ms) {
 
 
 async function runTriangle(ms){
-  for(var i = 0; i < 10000; i++){
+  for(var i = 0; i < 15000; i++){
     addSingle();
-    await sleep(3);
-    //addSingle();
+    if(i < 1000) await sleep(3);
+    else if(i < 3000) await sleep(2);
+    else await sleep(1);
   }
   pixelP.innerHTML = "Pixels: " + pixels;
 }
